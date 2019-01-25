@@ -89,7 +89,8 @@
 		<module>oauth-authorization-server</module>
 
 		<!-- commented out because these don't build on Jenkins -->
-		<!-- <module>clients-angular4/oauth-ui-implicit-angular4</module> <module>clients-angular4/oauth-ui-password-angular4</module> -->
+		 <module>clients-angular/oauth-ui-implicit-angular</module>
+		<module>clients-angular/oauth-ui-password-angular</module>
 	</modules>
 
 	<profiles>
