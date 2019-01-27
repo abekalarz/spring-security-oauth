@@ -15,12 +15,13 @@ import { OAuthService } from 'angular-oauth2-oidc';
 
 @Injectable()
 export class AppService {
- 
+
+   // To run with ssl, run in 'resources' folder command 'ng sserve --ssl --port 8083"
   constructor(
     private _router: Router, private _http: HttpClient, private oauthService: OAuthService){
         this.oauthService.configure({
             loginUrl: 'https://localhost:8443/oauth/authorize',
-            redirectUri: 'https://localhost:8443/',
+            redirectUri: 'https://localhost:8083/',
             clientId: 'sampleClientId',
             scope: 'read write foo bar',
             oidc: false
